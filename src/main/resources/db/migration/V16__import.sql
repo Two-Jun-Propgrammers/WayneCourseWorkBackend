@@ -1,0 +1,20 @@
+insert into  location.location (id, city, street, house) values ('3df823ff-a995-42b6-ab71-bc7ecfeca419', 'city1', 'street1', 1);
+insert into  location.location (id, city, street, house) values ('3df823ff-a995-42b6-ab71-bc7ecfeca410', 'city2', 'street2', 2);
+insert into arena.arena (id, name, location_id) VALUES ('3df823ff-a995-42b6-ab71-bc7ecfeca418', 'arena1', '3df823ff-a995-42b6-ab71-bc7ecfeca419');
+insert into arena.arena (id, name, location_id) VALUES ('3df823ff-a995-42b6-ab71-bc7ecfeca417', 'arena2', '3df823ff-a995-42b6-ab71-bc7ecfeca410');
+insert into tournament.tournament (id, name, beginning, ending, arena_id) VALUES ('3df823ff-a995-42b6-ab71-bc7ecfeca416', 'tournament1', '20.12.20', '22.12.20', '3df823ff-a995-42b6-ab71-bc7ecfeca418');
+insert into nomination.nomination (id, tournament_id, name) VALUES ('3df823ff-a995-42b6-ab71-bc7ecfeca415', '3df823ff-a995-42b6-ab71-bc7ecfeca416', 'nomination1');
+insert into weapon_category.weapon_category (id, name) VALUES ('3df823ff-a995-42b6-ab71-bc7ecfeca414', 'weapon1');
+insert into rounds.rounds (id, nomination_id, number, name, weapon_id) VALUES ('3df823ff-a995-42b6-ab71-bc7ecfeca413', '3df823ff-a995-42b6-ab71-bc7ecfeca415', 1, 'round1', '3df823ff-a995-42b6-ab71-bc7ecfeca414');
+insert into judges.judges (id, firstname, lastname) VALUES ('3df823ff-a995-42b6-ab71-bc7ecfeca412', 'firstJudge', 'firstJudgeLastname');
+insert into platform.platform (id, number, name) VALUES ('3df823ff-a995-42b6-ab71-bc7ecfeca411', 2, 'platform2');
+insert into duel.duel (id, round_id, number, judges_id, platform_id) VALUES ('3df823ff-a995-42b6-ab71-bc7ecfeca421', '3df823ff-a995-42b6-ab71-bc7ecfeca413', 1, '3df823ff-a995-42b6-ab71-bc7ecfeca412', '3df823ff-a995-42b6-ab71-bc7ecfeca411');
+insert into clubs.clubs (id, name, location_id) VALUES ('3df823ff-a995-42b6-ab71-bc7ecfeca422', 'club1', '3df823ff-a995-42b6-ab71-bc7ecfeca410');
+insert into participants.participants (id, firstname, lastname, club_id) VALUES ('3df823ff-a995-42b6-ab71-bc7ecfeca423', 'participant1', 'participant1Lastname', '3df823ff-a995-42b6-ab71-bc7ecfeca422');
+insert into participants.participants (id, firstname, lastname, club_id) VALUES ('3df823ff-a995-42b6-ab71-bc7ecfeca424', 'participant2', 'participant2Lastname', '3df823ff-a995-42b6-ab71-bc7ecfeca422');
+insert into duel_results.duel_results (id, participant_id, duel_id, points) VALUES ('3df823ff-a995-42b6-ab71-bc7ecfeca425', '3df823ff-a995-42b6-ab71-bc7ecfeca423', '3df823ff-a995-42b6-ab71-bc7ecfeca421', 5);
+insert into duel_results.duel_results (id, participant_id, duel_id, points) VALUES ('3df823ff-a995-42b6-ab71-bc7ecfeca435', '3df823ff-a995-42b6-ab71-bc7ecfeca424', '3df823ff-a995-42b6-ab71-bc7ecfeca421', 10);
+
+insert into users.users (id, username, password, firstname, lastname) VALUES ('3df823ff-a995-42b6-ab71-bc7ecfeca426', 'user1', '123', 'nameUser', 'lastNameUser');
+insert into roles.roles (id, name) VALUES ('3df823ff-a995-42b6-ab71-bc7ecfeca427', 'ADMIN');
+insert into users_roles.users_roles (id, user_id, role_id) VALUES ('3df823ff-a995-42b6-ab71-bc7ecfeca428', '3df823ff-a995-42b6-ab71-bc7ecfeca426', '3df823ff-a995-42b6-ab71-bc7ecfeca427');

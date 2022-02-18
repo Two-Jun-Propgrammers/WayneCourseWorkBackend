@@ -1,0 +1,6 @@
+http://localhost:8853/api/v1/t1/findAll
+http://localhost:8853/api/v1/t2/findAll
+http://localhost:8853/api/v1/t3/findAll
+http://localhost:8853/api/v1/t4/findAll
+http://localhost:8853/api/v1/t5/findAll
+http://localhost:8853/api/v1/t6/findAll
